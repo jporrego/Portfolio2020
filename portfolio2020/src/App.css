@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+/* Global Styles */
+
+:root {
+    --primary-color: #414af2;
+    --bg-color: #1D1D1D;
+    --bg-color-light: #27292c;
+    --bg-color-dark: #CCC9C2;
+    --dark-color: #121213;
+    --light-color: #f4f4f4;
+    --red-color: #D9415D;
+    --font-color-dark: #272727;
+    --font-color-light: #FAFAFA;
+    --font-color-grey: #918E86;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 0.625rem;
+}
+
+body {
+    font-family: 'Varta', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--font-color-light);
+    overflow-x: hidden;
+}
+
+a, :visited {
+    color: var(--font-color-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--font-color-grey);
+}
+
+ul {
+    list-style: none;
+}

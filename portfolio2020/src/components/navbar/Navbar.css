@@ -1,0 +1,17 @@
+.navbar {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    /*background-color: var(--bg-color-dark);*/
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .08);
+}
+
+.navbar__links {
+    grid-column: 4/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}

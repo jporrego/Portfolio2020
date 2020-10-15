@@ -1,0 +1,16 @@
+.landing {
+    grid-row: 3/6;
+    grid-column: 1/8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+h1 {
+    font-size: 3.3rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
