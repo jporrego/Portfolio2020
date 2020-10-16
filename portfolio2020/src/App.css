@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Playfair+Display:wght@400;500;700;800&family=Poppins:wght@300;400;700;800&display=swap');
 /* Global Styles */
 
 :root {
@@ -6,12 +6,14 @@
     --bg-color: #1D1D1D;
     --bg-color-light: #27292c;
     --bg-color-dark: #CCC9C2;
-    --dark-color: #121213;
-    --light-color: #f4f4f4;
-    --red-color: #D9415D;
+    --accent-color: #eb4848;
     --font-color-dark: #272727;
     --font-color-light: #FAFAFA;
-    --font-color-grey: #918E86;
+    --font-color-grey: #949494;
+    /* Fonts */
+    --font-primary: 'Poppins', sans-serif;
+    /*--font-secondary: 'Playfair Display', serif;*/
+    --font-secondary: 'Open Sans', sans-serif;
 }
 
 * {
@@ -25,7 +27,7 @@ html {
 }
 
 body {
-    font-family: 'Varta', sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     background-color: var(--bg-color);
     color: var(--font-color-light);
@@ -33,12 +35,13 @@ body {
 }
 
 a, :visited {
-    color: var(--font-color-dark);
+    color: var(--font-color-grey);
     text-decoration: none;
+    transition: all .25s ease-out;
 }
 
 a:hover {
-    color: var(--font-color-grey);
+    color: var(--accent-color);
 }
 
 ul {
