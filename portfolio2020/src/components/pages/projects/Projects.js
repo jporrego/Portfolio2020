@@ -30,8 +30,8 @@ function Projects() {
             <Navbar selected="projects"></Navbar>
             <motion.div className="projects__title" animate={titleAnimation} initial={{opacity:"0%"}}>projects</motion.div>
             <motion.div className="project-grid" animate={cardAnimation} initial={{opacity:"0%"}}>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
+                <ProjectCard title="shoppy" img="shoppy.png"></ProjectCard>
+                <ProjectCard title="Gaming forum"></ProjectCard>
                 <ProjectCard></ProjectCard>
                 <ProjectCard></ProjectCard>
             </motion.div>

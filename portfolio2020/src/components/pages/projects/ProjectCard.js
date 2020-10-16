@@ -1,11 +1,14 @@
 import React from 'react'
 import './ProjectCard.css';
 
-function ProjectCard() {
+
+function ProjectCard(props) {
+    const {title, img} = props;
+    const backgroundURL = '../../../assets/projects/' + img;
+
     return (
-        <div className="project-card">
-            {/*<img src={require("../../../assets/projects/shoppy.png")} alt="project-img" className="project-card__img"/>*/}
-            <div className="project-card__title">Title</div>
+        <div className="project-card" style={{backgroundImage: `url(${require("../../../assets/projects/shoppy.JPG")})`}}>
+            <div className="project-card__title">{title}</div>
         </div>
     )
 }
