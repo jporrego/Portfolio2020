@@ -6,7 +6,8 @@ import './Navbar.css';
 
 function Navbar(props) {
     const activePage = {
-        color: "var(--accent-color)"
+        color: "var(--accent-color)",
+        borderBottom: "2px solid var(--accent-color)"
     }
 
     return (

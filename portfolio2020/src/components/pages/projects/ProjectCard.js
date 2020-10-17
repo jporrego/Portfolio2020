@@ -7,7 +7,7 @@ function ProjectCard(props) {
     const backgroundURL = '../../../assets/projects/' + img;
 
     return (
-        <div className="project-card" style={{backgroundImage: `url(${require("../../../assets/projects/shoppy.JPG")})`}}>
+        <div className="project-card" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/images/projects/${img}")`}}>
             <div className="project-card__title">{title}</div>
         </div>
     )
