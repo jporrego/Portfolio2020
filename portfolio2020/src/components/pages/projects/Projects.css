@@ -11,7 +11,7 @@
     gap: 7rem;
     align-items: start;
     justify-items: center;
-    padding: 0rem 4rem;
+    padding: 0rem 4rem 4rem 4rem;
 }
 
 .projects__skills {
@@ -22,11 +22,17 @@
     justify-self: center;
     display: flex;
     justify-content: space-around;
-    color: var(--font-color-grey)
+    color: var(--font-color-grey);
+    cursor: pointer;
 }
 
 .projects__skills * {
     margin: 1rem .6rem 3rem .6rem;
+    transition: all .1s ease-out;
+}
+
+.projects__skills *:hover {
+    color: var(--accent-color);
 }
 
 .projects__title {

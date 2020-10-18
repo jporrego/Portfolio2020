@@ -37,20 +37,39 @@ function Projects() {
     const titleAnimation = useAnimation();
     const skillsAnimation = useAnimation();
 
+    const variants = {
+      visible: { opacity: 1, transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      }, },
+      hidden: { opacity: 0 },
+    }
+
     return (
         <div className="projects">
             <Navbar selected="projects"></Navbar>
             <motion.div className="projects__title" animate={titleAnimation} initial={{opacity:"0%"}}>projects</motion.div>
-            <motion.div className="projects__skills" animate={skillsAnimation} initial={{opacity:"0%"}}>
-              <FontAwesomeIcon icon={faHtml5} />
-              <FontAwesomeIcon icon={faCss3Alt} />
-              <FontAwesomeIcon icon={faJsSquare} />
-              <FontAwesomeIcon icon={faReact} />
-              <FontAwesomeIcon icon={faNodeJs} />
+            <motion.div className="projects__skills" /*animate={skillsAnimation}*/ initial="hidden" animate="visible" variants={variants}>
+              <motion.div variants={variants}>
+                <FontAwesomeIcon icon={faHtml5}/>
+              </motion.div>
+              <motion.div variants={variants}>
+                <FontAwesomeIcon icon={faCss3Alt} />
+              </motion.div>            
+              <motion.div variants={variants}>
+                <FontAwesomeIcon icon={faJsSquare} />
+              </motion.div >
+              <motion.div variants={variants}>
+                <FontAwesomeIcon icon={faReact} />
+              </motion.div>
+              <motion.div variants={variants}>
+                <FontAwesomeIcon icon={faNodeJs} />
+              </motion.div>
+              
             </motion.div>
             <motion.div className="project-grid" animate={cardAnimation} initial={{opacity:"0%"}}>
-                <ProjectCard title="shoppy" img="test.png" type="e-commerce site"></ProjectCard>
-                <ProjectCard title="gaming forum" img="gamingforum.PNG" type="e-commerce site"></ProjectCard>
+                <ProjectCard title="shoppy" img="test.png" type="e-commerce website"></ProjectCard>
+                <ProjectCard title="gaming forum" img="gamingforum.PNG" type="Gaming forum"></ProjectCard>
             </motion.div>
         </div>
     )
