@@ -49,10 +49,8 @@ function Projects() {
               <FontAwesomeIcon icon={faNodeJs} />
             </motion.div>
             <motion.div className="project-grid" animate={cardAnimation} initial={{opacity:"0%"}}>
-                <ProjectCard title="shoppy" img="shoppy.JPG"></ProjectCard>
-                <ProjectCard title="gaming forum" img="gamingforum.PNG"></ProjectCard>
-                <ProjectCard></ProjectCard>
-                <ProjectCard></ProjectCard>
+                <ProjectCard title="shoppy" img="test.png" type="e-commerce site"></ProjectCard>
+                <ProjectCard title="gaming forum" img="gamingforum.PNG" type="e-commerce site"></ProjectCard>
             </motion.div>
         </div>
     )
