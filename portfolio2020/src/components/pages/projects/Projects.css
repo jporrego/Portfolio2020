@@ -1,7 +1,7 @@
 .projects {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 7.5rem max-content max-content 1fr;
+    grid-template-rows: 6rem max-content max-content 1fr;
     height: 100vh;
 }
 
@@ -22,7 +22,7 @@
     justify-self: center;
     display: flex;
     justify-content: space-around;
-    color: var(--font-color-grey);
+    color: var(--font-color-accent);
     cursor: pointer;
 }
 
@@ -32,12 +32,13 @@
 }
 
 .projects__skills *:hover {
-    color: var(--accent-color);
+    color: var(--font-color-light);
 }
 
 .projects__title {
     font-size: 2.3rem;
     font-family: var(--font-primary);
+    color: var(--font-color-light);
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .5rem;

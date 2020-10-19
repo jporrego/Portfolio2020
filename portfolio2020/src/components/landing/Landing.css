@@ -10,20 +10,20 @@ h1 {
     font-size: 3rem;
     font-weight: 600;
     font-family: var(--font-primary);
+    color: var(--font-color-accent)
 }
 
 p {
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 1.6rem;
-    color: var(--font-color-grey)
+    color: var(--font-color-light)
 }
 
 .landing__text {
     grid-column: 2/3;
     align-self: end;
     justify-self: center;
-    margin-bottom: 5rem;
 }
 
 .landing__buttons {
@@ -31,18 +31,20 @@ p {
     align-self: start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 2rem;
     padding: 0rem 0rem;
 }
 
 .landing__button {
     font-size: 1.1rem;
-    background-color: var(--bg-color-light);
+    background-color: var(--bg-color-dark);
     font-family: var(--font-primary);
+    color: var(--font-color-light);
     font-weight: 600;
     width: fit-content;
-    width: 9.5rem;
+    width: 8.5rem;
     text-align: center;
     padding: 6px 5px;
+    margin-top: 5rem;
     text-transform: uppercase;
 }

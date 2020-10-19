@@ -3,13 +3,14 @@
 
 :root {
     --primary-color: #414af2;
-    --bg-color: #1D1D1D;
-    --bg-color-light: #27292c;
-    --bg-color-dark: #CCC9C2;
+    --bg-color: #17212a;
+    --bg-color-dark: rgba(13, 21, 26, 0.78);
+    --bg-color-light: rgb(28, 44, 53);
     --accent-color: #eb4848;
-    --font-color-dark: #272727;
-    --font-color-light: RGB(249, 249, 249);
-    --font-color-grey: #b4b4b4;
+    --font-color-accent: #96f6ae;
+    --font-color-accent-dark: #272727;
+    --font-color-light: #f0f0f0;
+    --font-color-grey: rgb(94, 140, 167);
     /* Fonts */
     --font-primary: 'Raleway', sans-serif;
     /*--font-secondary: 'Playfair Display', serif;*/
@@ -41,7 +42,7 @@ a, :visited {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--font-color-accent);
 }
 
 ul {
