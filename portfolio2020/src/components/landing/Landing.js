@@ -7,21 +7,38 @@ import './Landing.css';
 
 function Landing() {
 
+    const variants = {
+        visible: { opacity: 1, y:"0px", transition: {
+          when: "beforeChildren",
+          staggerChildren: 0.2,
+        }, },
+        hidden: { opacity: 0, y:"-10px" },
+      }
+    
+    const buttonVariants = {
+        visible: { opacity: 1, x:"0px", transition: {
+        delay: .6,
+          when: "beforeChildren",
+          staggerChildren: 0.6
+          
+        }, },
+        hidden: { opacity: 0, x:"-20px" },
+      }
     return (
-        <div className="landing">
-            <motion.div className="landing__text">
-                <p>Hi, I'm</p>
-                <h1>Juan Pablo Orrego C.</h1>
-                <p>Programming student and self-taught web developer, video editor and 3D artist.</p>          
+        <motion.div className="landing">
+            <motion.div className="landing__text" initial="hidden" animate="visible" variants={variants}>
+                    <motion.p variants={variants}>Hi, I'm</motion.p>
+                    <motion.h1 variants={variants}>Juan Pablo Orrego C.</motion.h1>
+                    <motion.p variants={variants} style={{display:"inline-block"}}>Programming student and self-taught web developer, video editor and 3D artist.</motion.p>          
             </motion.div>
-            <div className="landing__buttons">
+            <motion.div className="landing__buttons" initial="hidden" animate="visible" variants={buttonVariants}>
                 <Link to="/projects" className="landing__button">projects</Link>
-                <Link to="/about"className="landing__button">about</Link>
-                <Link to="/contact" className="landing__button">contact</Link>
-            </div>            
-            <div className="skills">
-                <h2 className="skills__title">skills</h2>
-                <div className="skills__icons">
+                <Link to="/about"className="landing__button" variants={buttonVariants}>about</Link>
+                <Link to="/contact" className="landing__button" variants={buttonVariants}>contact</Link>
+            </motion.div>            
+            <motion.div className="skills" initial="hidden" animate="visible" variants={variants}>
+                <motion.h2 className="skills__title" variants={variants}>skills</motion.h2>
+                <motion.div className="skills__icons" variants={variants}>
                     <motion.div>
                         <p>HTML5</p>
                         <FontAwesomeIcon icon={faHtml5}/>
@@ -46,9 +63,9 @@ function Landing() {
                         <p>Node.js</p>
                       <FontAwesomeIcon icon={faNodeJs} />
                     </motion.div>
-                </div>
-            </div>
-        </div>
+                </motion.div>
+            </motion.div>
+        </motion.div>
     )
 }
 

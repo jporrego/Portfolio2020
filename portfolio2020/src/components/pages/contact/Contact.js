@@ -5,7 +5,7 @@ function Contact() {
     return (
         <div className="contact">
             <Navbar selected="contact"></Navbar>
-            Contact
+            
         </div>
     )
 }
