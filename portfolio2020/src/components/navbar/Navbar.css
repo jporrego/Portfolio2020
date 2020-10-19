@@ -25,6 +25,7 @@
 
 .navbar__links * {
     height: 100%;
+    color: var(--font-color-light);
     display: flex;
     align-items: center;
 }

@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap');
 /* Global Styles */
 
 :root {
     --primary-color: #414af2;
     --bg-color: #17212a;
     --bg-color-dark: rgba(13, 21, 26, 0.78);
-    --bg-color-light: rgb(28, 44, 53);
+    --bg-color-light: rgb(41, 61, 73);
     --accent-color: #eb4848;
     --font-color-accent: #96f6ae;
     --font-color-accent-dark: #272727;
-    --font-color-light: #f0f0f0;
+    --font-color-light: rgb(236, 248, 255);
+    --font-color-light-darker: rgb(201, 226, 240);
     --font-color-grey: rgb(94, 140, 167);
     /* Fonts */
-    --font-primary: 'Raleway', sans-serif;
+    --font-primary: 'Jost', sans-serif;
     /*--font-secondary: 'Playfair Display', serif;*/
     --font-secondary: 'Open Sans', sans-serif;
 }
@@ -36,7 +38,6 @@ body {
 }
 
 a, :visited {
-    color: var(--font-color-grey);
     text-decoration: none;
     transition: all .25s ease-out;
 }

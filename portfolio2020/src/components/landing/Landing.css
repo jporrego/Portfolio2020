@@ -1,38 +1,52 @@
 .landing {
     grid-row: 2/-1;
+    align-self: center;
+    justify-self: center;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: minmax(1rem, 1fr) minmax(min-content, max-content) minmax(1rem, 1fr);
+    max-width: 80rem;
     justify-items: center;
+    align-items: center;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 600;
     font-family: var(--font-primary);
-    color: var(--font-color-accent)
+    color: var(--font-color-accent);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--font-color-accent);
+    margin-bottom: 1rem;
 }
 
 p {
-    font-family: var(--font-secondary);
-    font-weight: 400;
+    font-family: var(--font-primary);
+    font-weight: 500;
     font-size: 1.6rem;
     color: var(--font-color-light)
 }
 
 .landing__text {
-    grid-column: 2/3;
-    align-self: end;
     justify-self: center;
 }
 
+.landing__text p:first-of-type {
+    color: var(--font-color-accent);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 .landing__buttons {
-    grid-column: 2/3;
-    align-self: start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 0rem 0rem;
+    margin-top: 6rem;
 }
 
 .landing__button {
@@ -42,9 +56,29 @@ p {
     color: var(--font-color-light);
     font-weight: 600;
     width: fit-content;
-    width: 8.5rem;
+    width: 9rem;
     text-align: center;
-    padding: 6px 5px;
-    margin-top: 5rem;
+    padding: 10px 5px;
     text-transform: uppercase;
+}
+
+.skills {
+    display: grid;
+    justify-items: center;
+    padding-top: 7rem;
+}
+
+.skills__icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 3rem;
+    justify-items: center;
+}
+
+.skills__icons div {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }

@@ -1,6 +1,7 @@
 .logo {
     grid-column: 2/3;
     display: grid;
+    color: red;
 }
 
 .logo img {

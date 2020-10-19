@@ -48,7 +48,11 @@ function Projects() {
     return (
         <div className="projects">
             <Navbar selected="projects"></Navbar>
-            <motion.div className="projects__title" animate={titleAnimation} initial={{opacity:"0%"}}>projects</motion.div>
+            <motion.div className="projects__title" animate={titleAnimation} initial={{opacity:"0%"}}>
+              <span style={{display:"inline"}}>&#60;/</span>
+                projects
+              <span style={{display:"inline"}}>&#62;</span>
+              </motion.div>
             <motion.div className="projects__skills" /*animate={skillsAnimation}*/ initial="hidden" animate="visible" variants={variants}>
               <motion.div variants={variants}>
                 <FontAwesomeIcon icon={faHtml5}/>
