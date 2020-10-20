@@ -47,9 +47,16 @@
     padding-top: 3rem;
 }
 
-.projects__title span {
+.projects__title>span:first-child, .projects__title>span:last-child {
     font-size: 2.3rem;
     font-family: var(--font-primary);
     color: var(--font-color-accent);
     font-weight: 600;
+}
+
+#cursor {
+    color: var(--font-color-light);
+    letter-spacing: 0;
+    font-size: 2.4rem;
+    display: inline;
 }
