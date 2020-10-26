@@ -11,6 +11,7 @@ function ProjectCard(props) {
     return (
         <motion.div className="project-card" /*style={{backgroundImage: `url("${process.env.PUBLIC_URL}/images/projects/${img}")`}}*/>
             <motion.div className="project-card__img" animate={{opacity:["0%", "100%"]}} transition={{duration: 2}}>
+                <motion.img src={`${process.env.PUBLIC_URL}/images/projects/webBrowser.png`}></motion.img>
                 <motion.img src={`${process.env.PUBLIC_URL}/images/projects/${img}`} alt={title} animate={{objectPosition: ["0% 0%", "0% 0%", "0% 100%", "0% 100%", "0% 0%"]}} transition={{
                     duration: 6,
                     ease: "easeInOut",
