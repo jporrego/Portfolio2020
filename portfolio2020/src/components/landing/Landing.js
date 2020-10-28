@@ -65,6 +65,7 @@ function Landing() {
                     </motion.div>
                 </motion.div>
             </motion.div>
+            
         </motion.div>
     )
 }
