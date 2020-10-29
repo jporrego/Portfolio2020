@@ -32,15 +32,16 @@
     .network__links {
         display: flex;
         flex-direction: row;
-        color: var(--font-color-accent);
         transition: all .15s ease-out;
     }
     .network__link {
         padding-left: 1rem;
         padding-right: 1rem;
+        color: var(--font-white);
         transition: all .12s ease-out;
     }
     .network__link:hover {
         transform: scale(1.2);
+        color: var(--font-color-accent);
     }
 }
